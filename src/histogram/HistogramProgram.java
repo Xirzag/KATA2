@@ -1,9 +1,5 @@
 package histogram;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-
 public class HistogramProgram {
     public static void main(String[] args) {
         //int vector[] = {2,2,11,4,2,6,11,2,3,5,11,5};
@@ -16,8 +12,8 @@ public class HistogramProgram {
             System.out.println(result.getKey() + " " +result.getValue());
         }*/
         
-        for(Map.Entry result : histogram.keySet()) {
-            System.out.println(result.getKey() + " " +result.getValue());
+        for(String result : histogram.keySet()) {
+            System.out.println(result + " " + histogram.getValueOf(result));
         }
 
     }
